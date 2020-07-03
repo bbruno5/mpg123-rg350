@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/opt/gcw0-toolchain/usr/lib:/opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/lib
+includedir=/opt/gcw0-toolchain/usr/include:/opt/gcw0-toolchain/usr/include
+
+Name: libmpg123
+Description: An optimised MPEG Audio decoder
+Requires: 
+Version: 1.26.1
+Libs: -L${libdir} -lmpg123 
+Libs.private: -lm 
+Cflags: -I${includedir} 

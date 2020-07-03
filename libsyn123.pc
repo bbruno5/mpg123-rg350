@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/opt/gcw0-toolchain/usr/lib:/opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/lib
+includedir=/opt/gcw0-toolchain/usr/include:/opt/gcw0-toolchain/usr/include
+
+Name: libsyn123
+Description: A signal synthesis library accompanying mpg123
+Requires: 
+Version: 1.26.1
+Libs: -L${libdir} -lsyn123 
+Libs.private: -lm
+Cflags: -I${includedir} 
